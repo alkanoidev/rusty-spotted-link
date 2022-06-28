@@ -1,10 +1,35 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import Logo from "../assets/logo.svg";
+import Head from "next/head";
 
 const Home: NextPage = () => {
   return (
     <div className="h-full w-full flex flex-col gap-5 items-center pt-44 justify-center">
+      <Head>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="./root/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="./root/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="./root/favicon-16x16.png"
+        />
+        <link rel="icon" href="./root/favicon.ico" />
+        <link rel="manifest" href="./root/manifest.json" />
+        <link rel="icon" href="./root/favicon.png" />
+
+        <title>Rusty Spotted Link</title>
+      </Head>
       <Image src={Logo} width={70} height={70} />
       <h1>Rusty Spotted Link</h1>
       <form className="p-4 flex flex-col gap-4 bg-off-white dark:bg-off-dark rounded-lg w-full sm:w-[400px]">
