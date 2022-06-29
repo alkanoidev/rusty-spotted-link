@@ -37,3 +37,17 @@ a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-light dark:bg-dark;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-primary;
+}
