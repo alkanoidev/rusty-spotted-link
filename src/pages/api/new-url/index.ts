@@ -52,4 +52,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     .catch((err) => {
       res.status(400).json({ message: err });
     });
+
+  return res.status(200).json({ message: "short link generated.." });
 };
