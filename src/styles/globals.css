@@ -13,3 +13,27 @@ body {
 h1 {
   @apply text-dark dark:text-light text-3xl sm:text-5xl font-bold;
 }
+h2 {
+  @apply text-dark dark:text-light text-xl sm:text-2xl font-bold;
+}
+a {
+  @apply text-primary relative text-lg;
+}
+
+a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  @apply bg-primary;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-in;
+}
+
+a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
