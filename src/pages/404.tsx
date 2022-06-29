@@ -1,8 +1,6 @@
 import { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
-import Logo from "../assets/logo.svg";
 
 const FourOhFour: NextPage = () => {
   return (
@@ -31,11 +29,11 @@ const FourOhFour: NextPage = () => {
 
         <title>Rusty Spotted Link</title>
       </Head>
-
-      <Image src={Logo} width={70} height={70} />
-      <h1>Oh no :(</h1>
-      <h2>This rusty spotted link does not exist</h2>
-      <Link href="/">Go ahead and make one!</Link>
+      <div className="p-4 bg-light dark:bg-dark flex items-center text-center flex-col gap-4 rounded-lg w-full sm:w-[500px]">
+        <h1>Oh no :(</h1>
+        <h2>This rusty spotted link does not exist</h2>
+        <Link href="/">Go ahead and make one!</Link>
+      </div>
     </div>
   );
 };

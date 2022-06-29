@@ -10,9 +10,8 @@ export default function Button({
   return (
     <button
       onClick={onClick}
-      className="transition capitalize w-full border relative border-primary rounded text-lg text-dark dark:text-light py-2 
-    z-0 after:w-full after:h-full after:bg-gradient-to-tr from-primary to-primary1 after:top-0 after:left-0 after:absolute 
-    after:z-[-1] after:opacity-50 after:transition hover:after:opacity-60 font-semibold"
+      className="transition capitalize w-full border relative border-primary rounded text-lg text-off-dark dark:text-off-white py-2 
+                 bg-off-white dark:bg-off-dark from-primary to-primary1 font-semibold hover:ring-2 hover:ring-primary"
     >
       {children}
     </button>

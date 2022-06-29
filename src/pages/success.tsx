@@ -35,36 +35,37 @@ const Success: NextPage<Props> = ({ host }) => {
       <Head>
         <title>Rusty Spotted Link</title>
       </Head>
-
-      <p className="text-center text-dark dark:text-light text-xl">
-        Your Rusty Spotted Link was created!
-      </p>
-      <h1 className="text-8xl">🎉</h1>
-      <div className="p-4 flex text-dark dark:text-light flex-col gap-4 rounded-lg w-full sm:w-[400px]">
-        <label>Your long url:</label>
-        <div
-          className="rounded w-full overflow-x-auto flex py-3 px-2
+      <div className="p-4 bg-light dark:bg-dark justify-center items-center flex flex-col gap-4 rounded-lg w-full sm:w-[450px]">
+        <p className="text-center text-dark dark:text-light text-2xl">
+          Your Rusty Spotted Link was created!
+        </p>
+        <h1 className="text-8xl">🎉</h1>
+        <div className="p-4 flex text-dark dark:text-light flex-col gap-4 rounded-lg w-full">
+          <label>Your long url:</label>
+          <div
+            className="rounded w-full overflow-x-auto flex py-3 px-2
                     bg-off-white dark:bg-off-dark text-dark dark:text-light"
-        >
-          <Link href={url}>{url.toString()}</Link>{" "}
-        </div>
+          >
+            <Link href={url}>{url.toString()}</Link>{" "}
+          </div>
 
-        <label>Your rusty spotted link:</label>
+          <label>Your rusty spotted link:</label>
 
-        <div
-          className="rounded w-full overflow-x-auto flex py-3 px-2
+          <div
+            className="rounded w-full overflow-x-auto flex py-3 px-2
                     bg-off-white dark:bg-off-dark text-dark dark:text-light"
-        >
-          <Link href={host + "/" + slug}>{host + "/" + slug}</Link>
-        </div>
+          >
+            <Link href={host + "/" + slug}>{host + "/" + slug}</Link>
+          </div>
 
-        <Button
-          onClick={() => {
-            router.replace("/");
-          }}
-        >
-          Make another short link
-        </Button>
+          <Button
+            onClick={() => {
+              router.replace("/");
+            }}
+          >
+            Make another short link
+          </Button>
+        </div>
       </div>
     </div>
   );

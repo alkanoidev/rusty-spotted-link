@@ -58,12 +58,12 @@ const Home: NextPage = () => {
         <title>Rusty Spotted Link</title>
       </Head>
 
-      <h1>Rusty Spotted Link</h1>
       <form
         method="post"
         onSubmit={handleSubmit}
-        className="p-4 flex flex-col gap-4 rounded-lg w-full sm:w-[400px]"
+        className="p-4 bg-light dark:bg-dark flex flex-col gap-4 rounded-lg w-full sm:w-[500px]"
       >
+        <h1 className="text-center mb-3">Rusty Spotted Link</h1>
         <p className="flex flex-col gap-2">
           <label
             className="text-dark dark:text-light text-base font-semibold"
