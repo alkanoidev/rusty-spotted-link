@@ -5,6 +5,7 @@ import axios from "axios";
 import { useRouter } from "next/router";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Button from "../components/Button";
 
 const Home: NextPage = () => {
   const router = useRouter();
@@ -100,13 +101,7 @@ const Home: NextPage = () => {
           />
         </p>
         <p className="flex flex-col gap-2">
-          <button
-            className="transition w-full border relative border-primary rounded text-lg text-dark dark:text-light py-2 
-                       z-0 after:w-full after:h-full after:bg-primary after:top-0 after:left-0 after:absolute 
-                       after:z-[-1] after:opacity-50 after:transition hover:after:opacity-80 font-semibold"
-          >
-            Make a Short Link
-          </button>
+          <Button>Make a Short Link</Button>
         </p>
       </form>
 

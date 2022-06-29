@@ -35,7 +35,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 # todo
 
-- fix favicon not showing
 - caching
 - users
 - code refactor

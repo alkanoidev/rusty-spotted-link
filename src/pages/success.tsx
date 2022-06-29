@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
+import Button from "../components/Button";
 
 type Props = {
   host: string | null;
@@ -57,16 +58,13 @@ const Success: NextPage<Props> = ({ host }) => {
           <Link href={host + "/" + slug}>{host + "/" + slug}</Link>
         </div>
 
-        <button
-          className="transition capitalize w-full border relative border-primary rounded text-lg text-dark dark:text-light py-2 
-                       z-0 after:w-full after:h-full after:bg-primary after:top-0 after:left-0 after:absolute 
-                       after:z-[-1] after:opacity-50 after:transition hover:after:opacity-80 font-semibold"
+        <Button
           onClick={() => {
             router.replace("/");
           }}
         >
           Make another short link
-        </button>
+        </Button>
       </div>
     </div>
   );
