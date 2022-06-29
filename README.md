@@ -4,8 +4,8 @@
 
 ### ✨ Demos
 
-![demo1]()
-![demo2]()
+![demo2](https://raw.githubusercontent.com/alkanoidev/rusty-spotted-link/main/demos/screen-capture.webm)
+![demo1](https://raw.githubusercontent.com/alkanoidev/rusty-spotted-link/main/demos/screen-capture1.webm)
 
 ### 🛠 Tech Stack:
 
