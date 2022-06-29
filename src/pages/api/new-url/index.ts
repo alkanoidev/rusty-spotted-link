@@ -7,7 +7,13 @@ export default async function handler(
   res: NextApiResponse
 ) {
   const { url, slug } = req.body;
-  console.log(req.body);
+  const id = setTimeout(
+    () =>
+      res.json({
+        message: "There was an error with the upstream service!",
+      }),
+    9000
+  );
 
   if (!url || typeof url !== "string") {
     res.status(404).json({ message: "provide a url pls" });
@@ -36,7 +42,6 @@ export default async function handler(
       },
     },
   });
-  console.log("data?? ", data);
 
   if (data) {
     res.status(400).json({ message: "short link already exists" });
@@ -57,5 +62,6 @@ export default async function handler(
       res.status(400).json({ message: err });
     });
 
+  clearTimeout(id);
   return res.status(200).json({ message: "short link generated.." });
 }
