@@ -1,7 +1,11 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { prisma } from "../../../db/client";
+// pages/api/index.ts
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   const { url, slug } = req.body;
   console.log(req.body);
 
@@ -54,4 +58,4 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     });
 
   return res.status(200).json({ message: "short link generated.." });
-};
+}

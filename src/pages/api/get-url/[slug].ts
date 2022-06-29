@@ -1,6 +1,9 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { prisma } from "../../../db/client";
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   const slug = req.query["slug"];
 
   if (!slug || typeof slug != "string") {
@@ -26,4 +29,4 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
   res.setHeader("Cache-Control", "s-maxage=1000000000, stale-while-revalidate");
 
   return res.json(data);
-};
+}
