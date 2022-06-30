@@ -7,15 +7,15 @@
 
 ### Creating and redirecting to a short link
 
-<img width="70%" src="https://github.com/alkanoidev/rusty-spotted-link/blob/main/demos/demo1.gif?raw=true">
+![](https://github.com/alkanoidev/rusty-spotted-link/blob/main/demos/demo1.gif?raw=true)
 
 ### Server-side form validation
 
-<img width="70%" src="https://github.com/alkanoidev/rusty-spotted-link/blob/main/demos/demo2.gif?raw=true">
+![](https://github.com/alkanoidev/rusty-spotted-link/blob/main/demos/demo2.gif?raw=true)
 
 ### 404 page when the link you are trying to access doesn't exist
 
-<img width="70%" src="https://github.com/alkanoidev/rusty-spotted-link/blob/main/demos/demo3.gif?raw=true">
+![](https://github.com/alkanoidev/rusty-spotted-link/blob/main/demos/demo3.gif?raw=true)
 
 ## 🛠 Tech Stack:
 
