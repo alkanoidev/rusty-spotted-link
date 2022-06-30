@@ -4,8 +4,9 @@
 
 ### ✨ Demos
 
-<img width="200px" src="https://github.com/alkanoidev/rusty-spotted-link/blob/main/demos/demo1.gif?raw=true">  
-<img width="200px" src="https://github.com/alkanoidev/rusty-spotted-link/blob/main/demos/demo2.gif?raw=true">
+<img src="https://github.com/alkanoidev/rusty-spotted-link/blob/main/demos/demo1.gif?raw=true">  
+<img src="https://github.com/alkanoidev/rusty-spotted-link/blob/main/demos/demo2.gif?raw=true">
+<img src="https://github.com/alkanoidev/rusty-spotted-link/blob/main/demos/demo3.gif?raw=true">
 
 ### 🛠 Tech Stack:
 
@@ -25,7 +26,7 @@
 ### ⚙ Running Locally
 
 ```sh
-    npm install && npm run dev
+npm install && npm run dev
 ```
 
 ### Author 👋
