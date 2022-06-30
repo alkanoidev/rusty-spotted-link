@@ -4,8 +4,8 @@
 
 ### ✨ Demos
 
-![demo2](https://raw.githubusercontent.com/alkanoidev/rusty-spotted-link/main/demos/screen-capture.webm)
-![demo1](https://raw.githubusercontent.com/alkanoidev/rusty-spotted-link/main/demos/screen-capture1.webm)
+[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://raw.githubusercontent.com/alkanoidev/rusty-spotted-link/main/demos/demo1.gif)
+[![Demo CountPages alpha](https://share.gifyoutube.com/KzB6Gb.gif)](https://raw.githubusercontent.com/alkanoidev/rusty-spotted-link/main/demos/demo2.gif)
 
 ### 🛠 Tech Stack:
 
